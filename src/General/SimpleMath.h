@@ -92,7 +92,9 @@ inline unsigned int LowestSetBitNumber(unsigned int val) noexcept
 	return (unsigned int)__builtin_ctz(val);
 }
 
+#if ULONG_MAX == 0xFFFFFFFFu
 static_assert(sizeof(uint32_t) == sizeof(unsigned long));
+#endif
 inline unsigned int LowestSetBitNumber(unsigned long val) noexcept
 {
 	return (unsigned int)__builtin_ctzl(val);
