@@ -10,6 +10,7 @@
 
 #include <cstdint>
 #include <cstddef>
+#include <climits>
 #include <cmath>
 #include "gcc_builtins.h"
 #include "../ecv_duet3d.h"
